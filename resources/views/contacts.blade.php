@@ -22,6 +22,7 @@
 		<h4>Вы можете отправить мне письмо.</h4>
 		<h4>Я обязательно отвечу Вам в ближайшее время.</h4>
 			<form method="post" action="send-mail" accept-charset="UTF-8" >
+                {{ csrf_field() }}
 				<input type="text" name="name" placeholder="Имя" required>
 				<input type="email" name="email" placeholder="Ваш Email" required>
 				<input type="text" name="subject" placeholder="Тема" required>

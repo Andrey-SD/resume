@@ -9,22 +9,23 @@ use Mail;
 
 class Incoming extends Controller
 {
+    public $request;
     public function send(Request $request)
-//    public function send()
 	{
-//		Mail::send('mails.incoming', [], function ($message) {
-//            $message->from('andrey.sd.post@gmail.com', 'Sender');
-//            $message->to('andrey.sd.post@gmail.com', 'Receiver')->subject('Тестовое письмо с HTML');
-//        });
-//		$name = $request->name;
-//		$email = $request->email;
-//		$message = $request->message;
-//		$subject = $request->subject;
-		$name = 'bal';
-		$email = 'bal';
-		$message = 'bal';
-		$subject = 'bal';
+        $this->request = $request;
+//        $name = $request->name;
+//        $email = $request->email;
+//        $message = $request->message;
+//        $subject = $request->subject;
+        
+		Mail::send('mails.incoming', [], function ($message) {
+           $message->from($this->request->email, "(Резюме):".$this->request->name."<<".$this->request->email.">>");
+           $message->to('andrey.sd.post@gmail.com', 'Resume')
+                    ->subject($this->request->subject);
+       });
 		
-		Mail::to('andrey.sd.post@gmail.com')->send(new IncomingMail($name,$email,$message,$subject));
+		
+		
+		//Mail::to('andrey.sd.post@gmail.com')->send(new IncomingMail($name,$email,$message,$subject));
 	}
 }
