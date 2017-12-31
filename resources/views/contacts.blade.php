@@ -34,4 +34,13 @@
 	</div>
 </div>
 
+<div id="prelodaer">
+    <img src="{{ URL::asset('img/preloader.gif')}}" alt="preloder">
+</div>
+
+<script>
+    $('form').submit(function(){
+        $('#prelodaer').css('display', 'block');
+    });
+</script>
 @endsection

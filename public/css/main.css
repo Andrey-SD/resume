@@ -22,7 +22,7 @@ header{
 	width: 800px;
 	margin: 0 auto !important;
 	padding-top: 30px !important;
-/*	background-color: #EAE5E5;*/
+	background-color: #EAE5E5;
 }
 
 header>div{
@@ -375,6 +375,19 @@ textarea:-ms-input-placeholder {
 
 .active{
 	color: #61D0D4;
+}
+
+#prelodaer {
+	z-index: 100;
+	position: fixed;
+	background-color: rgba( 77, 77, 77, 0.5);
+	width: 100%; 
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+    text-align: center;
+    padding-top: 10% !important;
 }
 
 @-moz-document url-prefix()
