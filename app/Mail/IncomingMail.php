@@ -40,7 +40,6 @@ class IncomingMail extends Mailable
 			->with([
 				'name' => $this->name,
 				'email' => $this->email,
-			])
-			->subject('yjdjt gbcmvj');
+			]);
     }
 }
