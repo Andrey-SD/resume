@@ -25,10 +25,10 @@
 		</div>
 		<ul>
 			<li class="links">
-				<a href="/public/index.php">Главная</a>
-				<a href="/public/resume">Резюме</a>
-				<a href="/public/projects">Проекты</a>
-				<a href="/public/contacts">Контакты</a>
+				<a href="{{ URL::asset('index.php')}}">Главная</a>
+				<a href="{{ URL::asset('resume')}}">Резюме</a>
+				<a href="{{ URL::asset('projects')}}">Проекты</a>
+				<a href="{{ URL::asset('contacts')}}">Контакты</a>
 			</li>
 		</ul>
 	</header>

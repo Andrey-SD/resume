@@ -1,10 +1,2 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<h1>hello</h1>
-</body>
-</html>
+<p>{{ $mes['name']}} &lt;&lt;{{$mes['email']}}&gt;&gt; отправил(а) сообщение</p>
+<p>{{ $mes['message']}}</p>

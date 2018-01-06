@@ -4,28 +4,25 @@ namespace App\Http\Controllers\Mail;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Mail\IncomingMail;
 use Mail;
 
 class Incoming extends Controller
 {
-	public $subject;
-	
+    public $request;
+    public $arr;
+    
     public function send(Request $request)
 	{
-	$name = $request->name;
-	$email = $request->email;
-	$message = $request->message;
-	$this->subject = $request->subject;
-	
-	//echo $subject;
-	
-		Mail::send('mails.incoming', [], function ($message) {
-            $message->from('sender@test.com', 'ga');
-            $message->to('andrey.sd.post@gmail.com', 'Receiver')
-							//		->subject($this->subject)
-							->subject($request->subject);
-									;
-        });
+        $this->request = $request;
+        $this->arr = ['name'=>$request->name,
+										'email'=>$request->email,
+										'message'=>$request->message];
+        
+		Mail::send('mails.incoming',[ 'mes'=>$this->arr ], function ($message) {
+           $message->from($this->request->email, "(Резюме):".$this->request->name."<<".$this->request->email.">>");
+           $message->to('andrey.sd.post@gmail.com', 'Мне')
+                    ->subject($this->request->subject);
+    });
+	return view('sent');
 	}
 }
