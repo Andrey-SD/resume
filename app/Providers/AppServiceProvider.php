@@ -3,8 +3,9 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Resume;
-use Storage;
+//use App\Resume;
+//use Storage;
+use Illuminate\Support\Facades\Storage;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -15,17 +16,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //$info = Resume::all()->first();
-        $info = simplexml_load_file('ex.xml');
+        $info = simplexml_load_file('storage/data.xml');
 		view()->share(['info'=>$info]);
-       // $data = simplexml_load_file('ex.xml');
-        //print_r($info);
-        
-        //file_put_contents('ex.xml',$data->saveXML());
-        //print_r($data);
-        //view()->share(['data'=>$data]);
-        //echo $data->fam;
-        
     }
 
     /**

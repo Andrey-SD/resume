@@ -163,7 +163,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Orchestra\Parser\XmlServiceProvider::class,
+        //Orchestra\Parser\XmlServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -226,10 +226,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'XmlParser' => Orchestra\Parser\Xml\Facade::class,
-
-'Form' => Collective\Html\FormFacade::class,
-'Html' => Collective\Html\HtmlFacade::class,
+//        'XmlParser' => Orchestra\Parser\Xml\Facade::class,
+//
+//'Form' => Collective\Html\FormFacade::class,
+//'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];
