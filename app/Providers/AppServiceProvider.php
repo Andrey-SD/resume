@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 //use App\Resume;
 //use Storage;
 use Illuminate\Support\Facades\Storage;
+use File;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $info = simplexml_load_file('storage/data.xml');
+        $info = simplexml_load_file('data.xml');
 		view()->share(['info'=>$info]);
     }
 
