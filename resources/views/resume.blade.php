@@ -10,7 +10,7 @@
 					</div>
 					<div class="resume_description" style="width:80%;">
 						
-						<p>@for($count=0;$count<50;$count++){{$info->about}}@endfor</p>
+						<p>{{$info->about}}</p>
 						
 					</div>
 				
