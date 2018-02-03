@@ -15,8 +15,8 @@ class Incoming extends Controller
 	{
         $this->request = $request;
         $this->arr = ['name'=>$request->name,
-										'email'=>$request->email,
-										'message'=>$request->message];
+					  'email'=>$request->email,
+					  'message'=>$request->message];
         
 		Mail::send('mails.incoming',[ 'mes'=>$this->arr ], function ($message) {
            $message->from($this->request->email, "(Резюме):".$this->request->name."<<".$this->request->email.">>");

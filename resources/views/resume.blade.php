@@ -31,7 +31,10 @@
 						<p>Образование</p>
 					</div>
 					<div class="resume_description">
-						<p>{{$info->about}}</p>
+						
+						@for ($i = 0; $i < 100; $i++)
+    						<p>{{$info->about}}</p>
+						@endfor
 					</div>
 				
 				</div>

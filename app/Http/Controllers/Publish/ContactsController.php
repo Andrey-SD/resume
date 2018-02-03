@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Publish;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ContactsController extends Controller
 {
