@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 //use App\Resume;
 //use Storage;
 use Illuminate\Support\Facades\Storage;
+use File;
 
 class AppServiceProvider extends ServiceProvider
 {

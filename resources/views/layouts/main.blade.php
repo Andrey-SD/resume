@@ -21,7 +21,7 @@
 	<header>
 		<div>
 			<h1>{{$info->name}} {{$info->family}}</h1>
-			<h3>treneng/junior php dev</h3>
+			<h3>{{$info->position}}</h3>
 		</div>
 		<ul>
 			<li class="links">

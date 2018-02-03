@@ -11,18 +11,29 @@
 |
 */
 
-Route::get('/test', function () {
-    return view('test');
-});
+Route::get('/','Publish\HomeController@home');
 
-Route::get('/','HomeController@home');
+Route::get('/projects','Publish\ProjectsController@projects');
 
-Route::get('/projects','ProjectsController@projects');
+Route::get('/resume','Publish\ResumeController@resume');
 
-Route::get('/resume','ResumeController@resume');
-
-Route::get('/contacts','ContactsController@contacts');
+Route::get('/contacts','Publish\ContactsController@contacts');
 
 Route::post('/send-mail','Mail\Incoming@send');
+
+Route::get('/dash-auth','Auth\LoginController@showLoginForm');
+
+Route::post('/dash-auth','Auth\LoginController@login')->name('login');
+
+Route::get('/logout','Auth\LoginController@logout');
+
+Route::get('/my-dash','Admin\DashController@dash')->middleware('auth');
+
+Route::post('/my-dash','Admin\DashController@code_edit')->name('code_edit');
+
+//Route::get('/dash-register','Auth\RegisterController@showRegistrationForm');
+
+//Route::post('/dash-register','Auth\RegisterController@register')->name('register');
+
 
 

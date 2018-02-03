@@ -1,15 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Publish;
 
 use Illuminate\Http\Request;
-use App\Resume;
+use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
-	function home() {
-		
+    function home()	{
 		return view('home');
 	}
 }
-
