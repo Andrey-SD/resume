@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @extends('layouts.app')
 
 @section('content')
@@ -9,6 +10,11 @@
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+=======
+@extends('layouts.main')
+@section('content')
+<form class="form-horizontal" method="POST" action="{{ route('register') }}">
+>>>>>>> dfea96686ec77dce046a6a397453063501c00d59
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -69,9 +75,14 @@
                             </div>
                         </div>
                     </form>
+<<<<<<< HEAD
                 </div>
             </div>
         </div>
     </div>
 </div>
 @endsection
+=======
+
+@endsection
+>>>>>>> dfea96686ec77dce046a6a397453063501c00d59
