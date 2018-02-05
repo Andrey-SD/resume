@@ -80,25 +80,16 @@
 						</g> 
 					</svg>
 					<h4>Личные качества</h4>
+					@foreach($info->personal_qualities as $count)
 					<div class="progress">
 					  <div class="progress-bar progress-bar-striped active" role="progressbar"
-					  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:100%; background-color: #E83556;">
-						<p>dddddddddddddddddddddd</p>
+					  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:{{ $count->value }}%; background-color: #E83556;">
+						<p>{{ $count->qual }}</p>
 					  </div>
 					</div>
-					<div class="progress">
-					  <div class="progress-bar progress-bar-striped active" role="progressbar"
-					  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%; background-color: #E83556;">
-						<p>ddddddd</p>
-					  </div>
-					</div>
+					@endforeach
 				
-					<div class="progress">
-					  <div class="progress-bar progress-bar-striped active" role="progressbar"
-					  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%; background-color: #E83556;">
-						<p>dddddddddddddd</p>
-					</div>
-					</div>
+					
 				</div>
 				<div class="skills">
 					<svg width="45px" height="45px" viewBox="0 0 476.264 476.265" style="enable-background:new 0 0 476.264 476.265;" xml:space="preserve">

@@ -7,4 +7,12 @@
     <about>Здесь текст о том какой я хороший</about>
     <email>andrey.sd.post@gmail.com</email>
     <phone_number>+38 098 320  41</phone_number>
+    <personal_qualities>
+        <qual>Ответственнос1hxbdusjncjsijchufujbduxhdhxhть</qual>
+         <value>100</value>
+    </personal_qualities>
+    <personal_qualities>
+         <qual>Трудолюбие</qual>
+         <value>10</value>
+    </personal_qualities>
 </resume>
