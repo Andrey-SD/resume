@@ -9,31 +9,24 @@
 						<p>Обо мне</p>
 					</div>
 					<div class="resume_description" style="width:80%;">
-						
 						<p>{{$info->about}}</p>
-						
 					</div>
-				
 				</div>
 				<div class="resume_row row-flex">
-				
 					<div class="resum_title">
 						<p>Опыт работы</p>
 					</div>
-					<div class="resume_description">
+					<div class="resume_description" style="width:80%;">
 						<p>{{$info->about}}</p>
 					</div>
-				
 				</div>
 				<div class="resume_row row-flex">
-				
 					<div class="resum_title">
 						<p>Образование</p>
 					</div>
-					<div class="resume_description">
+					<div class="resume_description" style="width:80%;">
 						<p>{{$info->about}}</p>
 					</div>
-				
 				</div>
 			</div>
 			<div class="col-md-3 ">
@@ -77,25 +70,16 @@
 						</g> 
 					</svg>
 					<h4>Личные качества</h4>
+					@foreach($info->personal_qualities as $count)
 					<div class="progress">
 					  <div class="progress-bar progress-bar-striped active" role="progressbar"
-					  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:100%; background-color: #E83556;">
-						<p>dddddddddddddddddddddd</p>
+					  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:{{ $count->value }}%; background-color: #E83556;">
+						<p>{{ $count->qual }}</p>
 					  </div>
 					</div>
-					<div class="progress">
-					  <div class="progress-bar progress-bar-striped active" role="progressbar"
-					  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%; background-color: #E83556;">
-						<p>ddddddd</p>
-					  </div>
-					</div>
+					@endforeach
 				
-					<div class="progress">
-					  <div class="progress-bar progress-bar-striped active" role="progressbar"
-					  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%; background-color: #E83556;">
-						<p>dddddddddddddd</p>
-					</div>
-					</div>
+					
 				</div>
 				<div class="skills">
 					<svg width="45px" height="45px" viewBox="0 0 476.264 476.265" style="enable-background:new 0 0 476.264 476.265;" xml:space="preserve">
@@ -109,13 +93,12 @@
 					</svg>
 					<h4>Хобби</h4>
 					<dl>
-						<dt>Программировоние</dt>
-						<dt>Путешествия</dt>
-						<dt>Вело</dt>
-						<dt>HandMade</dt>
+					    @foreach($info->hobbi as $count)
+						<dt>{{ $count }}</dt>
+						@endforeach
 					</dl>
 				</div>
-			</div><!-- col-md-3 -->
+			</div>
 
 		</div>
 

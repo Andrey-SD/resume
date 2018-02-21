@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @section('content')
+<!--<<<<<<< HEAD-->
                        <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 

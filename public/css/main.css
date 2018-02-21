@@ -98,8 +98,8 @@ h1, h3{
 }
 
 .right_div>p{
-	word-break: break-all;
 	width: 100%;
+    
 }
 
 
@@ -120,6 +120,7 @@ footer {
 	margin-left: 65px !important;
 	font-size: 15px;
 	color: white;
+    
 }
 
 .container{
@@ -180,6 +181,10 @@ p>a{
 h4{
 	font-family: sans-serif;
 	padding: 10px 0px 10px 0px !important;
+}
+
+.parent_text_area{
+    margin-top: 10px !important;
 }
 
 textarea{
@@ -277,7 +282,7 @@ dt{
 
 .progress{
 	margin-bottom: 10px !important;
-	width:85% !important;
+	width:100% !important;
 /*	height:40px !important;*/
 	
 }

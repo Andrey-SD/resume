@@ -2,9 +2,37 @@
 <resume>
     <name>Андрей</name>
     <family>Деркач</family>
-    <position> php разработчик</position>
-    <title>Здравствуйте, разрешите представится</title>
-    <about>Здесь текст о том какой я хороший</about>
-    <email>andrey.sd.post@gmail.com </email>
-    <phone_number>+380983206141</phone_number>
+    <position>php developer</position>
+    <title>Здравствуйте, меня зовут Андрей.</title>
+    <about>Свой 'Hello World' я написал еще в школе, на языке Pascal. С тех пор программирование стало для меня хобби, а профессия программиста мечтой. Сейчас я готов воплотить свою мечту в жизнь.</about>
+    <email>andrey.sd.post@gmail.com</email>
+    <phone_number>+38 098 320 61 41</phone_number>
+    <personal_qualities>
+        <qual>Ответственноcть</qual>
+        <value>100</value>
+    </personal_qualities>
+    <personal_qualities>
+        <qual>Трудолюбие</qual>
+        <value>80</value>
+    </personal_qualities>
+    <personal_qualities>
+        <qual>Конфликтность</qual>
+        <value>10</value>
+    </personal_qualities>
+    <hobbi>Программирование</hobbi>
+    <hobbi>Путешествия</hobbi>
+    <hobbi>Вело</hobbi>
+    <hobbi>HandeMade</hobbi>
+    <project>
+       <preview_img_link>img/sat.png</preview_img_link>
+       <name>Satellite</name>
+       <description>Проект был написан в рамках лабараторной работы на тему "Объектная модель HTML документа"</description>
+       <link_heroku>https://satellite-andrey.herokuapp.com/index.html</link_heroku>
+    </project>
+    <project>
+       <preview_img_link>img/todo.png</preview_img_link>
+       <name>ToDo List</name>
+       <description>ТЗ для этого проекта было найдено на просторах интернета и написано для развития навыков при работе с MySQL базой данных, технологией AJAX, библиотекой jQuery и jQuery UI</description>
+       <link_heroku>https://todo-list-andrey.herokuapp.com/</link_heroku>
+    </project>
 </resume>
