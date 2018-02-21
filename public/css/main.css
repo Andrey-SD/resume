@@ -388,6 +388,10 @@ textarea:-ms-input-placeholder {
 	display: none;
 }
 
+.form-group{
+    height: 70px !important;
+}
+
 #prelodaer img{
 	position: fixed;
 	top: calc(50% - 100px);
