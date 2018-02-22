@@ -16,8 +16,16 @@
         <value>80</value>
     </personal_qualities>
     <personal_qualities>
-        <qual>Конфликтность</qual>
-        <value>10</value>
+        <qual>Неконфликтность</qual>
+        <value>90</value>
+    </personal_qualities>
+    <personal_qualities>
+        <qual>Коллективность</qual>
+        <value>70</value>
+    </personal_qualities>
+    <personal_qualities>
+        <qual>Внимательность</qual>
+        <value>60</value>
     </personal_qualities>
     <hobbi>Программирование</hobbi>
     <hobbi>Путешествия</hobbi>
@@ -35,4 +43,29 @@
        <description>ТЗ для этого проекта было найдено на просторах интернета и написано для развития навыков при работе с MySQL базой данных, технологией AJAX, библиотекой jQuery и jQuery UI</description>
        <link_heroku>https://todo-list-andrey.herokuapp.com/</link_heroku>
     </project>
+    <works>
+    	<name>Детская IT Школа Smart</name>
+    	<date>Янв 2018 - наст.</date>
+    	<position>Преподаватель роботехники</position>
+    	<duties>Обучение детей младшего школьного возраста понятию “робототехника”.
+Освоение понятий “программирование”, “алгоритм”, “программа” на примере конструктора LEGO WeDo</duties>
+    </works>
+    <works>
+    	<name>Транспортная компания "САТ"</name>
+    	<date>Дек 2017 - наст.</date>
+    	<position>Оператор приемки/выдачи ТМЦ</position>
+    	<duties></duties>
+    </works>
+    <works>
+    	<name>“ЕВРАЗ” ДМЗ им.Петровского</name>
+    	<date>Апр 2012- Дек 2016</date>
+    	<position>Оператор автоматизированной линии металлопроката</position>
+    	<duties>Настройка и контроль работы линии горячего металлопроката.</duties>
+    </works>
+    <education>
+    	<date>Мар. 2017-Ноя. 2017</date>
+    	<name>Level UP</name>
+    	<lesson>Web разработчик с использованием языка PHP</lesson>
+    </education>
+    
 </resume>

@@ -8,24 +8,40 @@
 					<div class="resum_title">
 						<p>Обо мне</p>
 					</div>
-					<div class="resume_description" style="width:80%;">
-						<p>{{$info->about}}</p>
+					<div class="resume_description">
+						<p class="work_ch">{{$info->about}}</p>
 					</div>
 				</div>
 				<div class="resume_row row-flex">
 					<div class="resum_title">
 						<p>Опыт работы</p>
 					</div>
-					<div class="resume_description" style="width:80%;">
-						<p>{{$info->about}}</p>
+					<div class="resume_description">
+						@foreach($info->works as $work)
+							<p class="work_ch" style="margin-top:10px !important;">{{$work->date}}</p>
+							<p class="work_tar">Место работы:</p>
+							<p class="work_ch">{{$work->name}}</p>
+							<p class="work_tar">Должность:</p>
+							<p class="work_ch">{{$work->position}}</p>
+							<p class="work_tar">Обязанности:</p>
+							<p class="work_ch" style="border-bottom: 1px solid #8B8B8B;">{{$work->duties}}</p>
+							
+						@endforeach
+						
 					</div>
 				</div>
 				<div class="resume_row row-flex">
 					<div class="resum_title">
 						<p>Образование</p>
 					</div>
-					<div class="resume_description" style="width:80%;">
-						<p>{{$info->about}}</p>
+					<div class="resume_description">
+						@foreach($info->education as $education)
+							<p class="work_ch" style="margin-top:10px !important;">{{$education->date}}</p>
+							<p class="work_tar">Место учебы:</p>
+							<p class="work_ch">{{$education->name}}</p>
+							<p class="work_tar">Специальность:</p>
+							<p class="work_ch">{{$education->lesson}}</p>
+						@endforeach
 					</div>
 				</div>
 			</div>

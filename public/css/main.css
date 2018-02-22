@@ -257,6 +257,10 @@ dt{
 	
 }
 
+.resume_description{
+	width: 80% !important;
+}
+
 .resume_row>div{
 	display: inline-block;
 }
@@ -294,6 +298,17 @@ dt{
 	font-size: 15px;
 	font-weight: 600;
 	
+}
+
+/*
+.work_tar{
+	font-size: 18px;
+}
+*/
+
+.work_ch{
+	padding-left: 5px !important;
+	font-size: 18px;
 }
 
 form>*:not([type="submit"]){
