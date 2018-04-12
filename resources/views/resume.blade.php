@@ -1,22 +1,22 @@
 @extends('layouts.main')
 @section('content')
-	<div class="projects_div ">
-		<div class="row row-flex">
-			<div class="col-md-9">
-				<div class="resume_row row-flex">
-				
-					<div class="resum_title">
+<section class="resume">
+		<div class="row">
+			<div class="col-md-9 col-sm-9 col-xs-9">
+				<div class="row resume_row">
+					<div class="col-md-2 col-sm-2 col-xs-2 resume_row_title">
 						<p>Обо мне</p>
 					</div>
-					<div class="resume_description">
-						<p class="work_ch">{{$info->about}}</p>
+					<div class="col-md-10 col-sm-10 col-xs-10">
+						<p>{{$info->about}}</p>
 					</div>
+				
 				</div>
-				<div class="resume_row row-flex">
-					<div class="resum_title">
+				<div class="row resume_row">
+					<div class="col-md-2 col-sm-2 col-xs-2 resume_row_title">
 						<p>Опыт работы</p>
 					</div>
-					<div class="resume_description">
+					<div class="col-md-10 col-sm-10 col-xs-10">
 						@foreach($info->works as $work)
 							<p class="work_ch" style="margin-top:10px !important;">{{$work->date}}</p>
 							<p class="work_tar">Место работы:</p>
@@ -27,14 +27,14 @@
 							<p class="work_ch" style="border-bottom: 1px solid #8B8B8B;">{{$work->duties}}</p>
 							
 						@endforeach
-						
 					</div>
+				
 				</div>
-				<div class="resume_row row-flex">
-					<div class="resum_title">
+				<div class="row resume_row">
+					<div class="col-md-2 col-sm-2 col-xs-2 resume_row_title">
 						<p>Образование</p>
 					</div>
-					<div class="resume_description">
+					<div class="col-md-10 col-sm-10 col-xs-10">
 						@foreach($info->education as $education)
 							<p class="work_ch" style="margin-top:10px !important;">{{$education->date}}</p>
 							<p class="work_tar">Место учебы:</p>
@@ -43,9 +43,15 @@
 							<p class="work_ch">{{$education->lesson}}</p>
 						@endforeach
 					</div>
+				
 				</div>
+										
 			</div>
-			<div class="col-md-3 ">
+			
+			
+			
+			
+			<div class="col-md-3 col-sm-3 col-xs-3">
 				<div class="skills">
 					<svg width="45px" height="45px" viewBox="0 0 155.739 155.739" style="enable-background:new 0 0 155.739 155.739;" xml:space="preserve">
 						<g>
@@ -115,9 +121,6 @@
 					</dl>
 				</div>
 			</div>
-
 		</div>
-
-	</div>
-
+	</section>
 @endsection

@@ -13,6 +13,8 @@
 
 Route::get('/','Publish\HomeController@home');
 
+Route::get('/home','Publish\HomeController@home');
+
 Route::get('/projects','Publish\ProjectsController@projects');
 
 Route::get('/resume','Publish\ResumeController@resume');
@@ -31,10 +33,7 @@ Route::get('/my-dash','Admin\DashController@dash')->middleware('auth');
 
 Route::post('/my-dash','Admin\DashController@code_edit')->name('code_edit');
 
-Route::get('/test', function(){ return view('test');});
+Route::get('/test', function(){ return view('layouts.workmain');});
 
-//Route::get('/dash-register','Auth\RegisterController@showRegistrationForm');
-
-//Route::post('/dash-register','Auth\RegisterController@register')->name('register');
 
 

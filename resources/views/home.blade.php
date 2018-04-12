@@ -1,21 +1,19 @@
 @extends('layouts.main')
 @section('content')
-<div class="row row-flex">
-	<div class="col-md-4" >
-		<img src='{{ URL::asset('img/photo.png')}}'>
-	</div>
-	<div class="col-md-8">
-		<div class="right_div">
-			<h1>{{$info->title}}</h1>
-			<h3>{{$info->title_min}}</h3>
-<!--			<a href="/public/resume">Резюме</a>-->
-            <a href="{{ URL::asset('resume')}}">Резюме</a>
-			<a href="{{ URL::asset('projects')}}">Проекты</a>
-			<a href="{{ URL::asset('resume')}}">Навыки</a>
-			<p>{{$info->about}}</p>
+<section>
+		<div class="row">
+			<div class="col-md-5 col-sm-5">
+				<img src='{{ URL::asset('img/photo.png')}}'>
+			</div>
+			<div class="col-md-7 col-sm-7">
+				<h1>Здравствуйте, меня зовут {{$info->name}}.</h1>
+				<div class="links ">
+					<a href="{{ URL::asset('resume')}}">Резюме</a>
+					<a href="{{ URL::asset('projects')}}">Проекты</a>
+					<a href="{{ URL::asset('resume')}}">Навыки</a>
+				</div>
+				<p>{{$info->about}}</p>
+			</div>
 		</div>
-	</div>
-</div>
-
-
+	</section>
 @endsection
