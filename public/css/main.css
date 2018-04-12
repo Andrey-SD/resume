@@ -268,11 +268,12 @@ textarea{
 }
 
 .nav{
-	position: fixed;
-	width: 50px;
-	height: 25px;
-	background-color: red;
+	padding: 2px;
+	width: 100px;
+	margin-left: auto;
 }
+
+
 
 
 
@@ -287,6 +288,10 @@ textarea{
 	
 	body>*{
 		width: 100%;
+	}
+	
+	.nav{
+		display: none;
 	}
 	
 	footer>div{
