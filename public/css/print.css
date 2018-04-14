@@ -1,0 +1,45 @@
+.print{
+	padding: 2mm;
+	width: 210mm;
+	height: 296mm;
+	background-color: white;
+	
+}
+
+button{
+	width: 210mm !important;
+	display: block;
+	margin: 5px auto 65px !important;
+}
+
+.print h3{
+	padding: 5px;
+	border-bottom: 1px solid #8B8B8B;
+}
+
+.print table{
+	width: 60%;
+	padding: 10px;
+}
+
+.print img{
+	vertical-align: top;
+	width: 30%;
+}
+
+.print>div>*{
+	display: inline-block;
+}
+
+.print tr{
+	
+	border-bottom: 1px dotted #8B8B8B;	
+}
+
+.print td{
+	width: 50%;
+	
+}
+
+
+

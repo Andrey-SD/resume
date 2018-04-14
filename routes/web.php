@@ -33,7 +33,9 @@ Route::get('/my-dash','Admin\DashController@dash')->middleware('auth');
 
 Route::post('/my-dash','Admin\DashController@code_edit')->name('code_edit');
 
-Route::get('/test', function(){ return view('layouts.workmain');});
+Route::get('/print','Publish\PrintController@print');
+
+Route::get('/download','Publish\DownloadController@download');
 
 
 

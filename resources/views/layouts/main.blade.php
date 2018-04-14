@@ -14,10 +14,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<link href='{{ URL::asset('css/main.css') }}' rel="stylesheet" type="text/css">
+	<link href='{{ URL::asset('css/print.css') }}' rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="nav">
-		
+		<a href="{{ URL::asset('download')}}" title="скачать PDF"><img alt="скачать PDF" src="img/pdf.png"></a>
+		<a href="{{ URL::asset('print')}}" title="печать"><img alt="печать" src="img/print.png"></a>
 	</div>
 	<header>
 		<div class="row">

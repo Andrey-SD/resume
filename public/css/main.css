@@ -52,7 +52,7 @@ section h1:not(.projects h1) {
 	text-align: right;
 }
 
-section img{
+section img:not(.print img){
 	display: block;
 	margin: 0 auto !important;
 }
@@ -199,7 +199,7 @@ form>*:not([type="submit"]){
 	color: white;
 }
 
-input[type="submit"]{
+input[type="submit"],.print~button{
 	width: 100%;
 	height: 25px;
 	border-style: none;
@@ -272,14 +272,6 @@ textarea{
 	width: 100px;
 	margin-left: auto;
 }
-
-
-
-
-
-
-
-
 @media (max-width: 768px) {
 	*{
 		margin: 0 !important;
