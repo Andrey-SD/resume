@@ -1,7 +1,6 @@
 .print{
 	padding: 2mm;
 	width: 210mm;
-	height: 296mm;
 	background-color: white;
 	
 }
@@ -12,23 +11,72 @@ button{
 	margin: 5px auto 65px !important;
 }
 
-.print h3{
-	padding: 5px;
+.print h3,.print>div{
+/*	padding: 5px;*/
 	border-bottom: 1px solid #8B8B8B;
 }
 
+.print>div{
+	
+	padding: 10px 5px 5px 100px !important;
+}
+
+/*
+.print>div:not(:first-child){
+	display: inline-block;
+}
+*/
+
 .print table{
 	width: 60%;
-	padding: 10px;
+	
+	
 }
 
 .print img{
 	vertical-align: top;
-	width: 30%;
+	height: 50mm;
 }
+
+/*
+.print>div{
+	padding: 3mm !important;
+	
+}
+*/
 
 .print>div>*{
 	display: inline-block;
+}
+
+/*
+.print>div>p{
+	color: #8B8B8B;
+	font-weight: bold;
+	width: 25%;
+}
+*/
+
+.rw>p{
+	color: #8B8B8B;
+	font-weight: bold;
+	width: 25%;
+}
+
+.rw>div{
+	width: 70%;
+}
+
+.frs{
+	font-style: italic;
+}
+
+.scn{
+	font-weight: bold;
+}
+
+.tr{
+	font-style:oblique;
 }
 
 .print tr{
@@ -39,6 +87,11 @@ button{
 .print td{
 	width: 50%;
 	
+}
+
+.print p{
+	vertical-align: top;
+/*	margin-right: 75px;*/
 }
 
 

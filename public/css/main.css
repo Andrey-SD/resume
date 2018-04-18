@@ -115,12 +115,12 @@ footer>div{
 	margin: 0 auto;
 }
 
-.resume li{
+.resume li,.print li{
 	margin-left: 20px !important;
 	color: #8B8B8B; 
 }
 
-.skills{
+.skills:not(.print .skills){
 	border-bottom: 1px solid #8B8B8B;
 	margin-bottom: 15px !important;
 }
@@ -272,6 +272,21 @@ textarea{
 	width: 100px;
 	margin-left: auto;
 }
+
+@media print{
+	header{
+		display: none;
+	}
+	
+	footer{
+		display: none;
+	}
+	
+	
+	
+	
+}
+
 @media (max-width: 768px) {
 	*{
 		margin: 0 !important;
@@ -349,4 +364,10 @@ textarea{
 	.progress p{
 		font-size: 2.5vw;
 	}
+	
+	.print table{
+		width: 60%;
+		padding: 10px 0px 0px 100px !important;
+	
+}
 }

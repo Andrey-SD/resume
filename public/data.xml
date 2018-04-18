@@ -45,11 +45,10 @@
        <link_heroku>https://todo-list-andrey.herokuapp.com/</link_heroku>
     </project>
     <works>
-    	<name>Детская IT Школа Smart</name>
+    	<name>"Детская IT Школа Smart"</name>
     	<date>Янв 2018 - наст.</date>
     	<position>Преподаватель роботехники</position>
-    	<duties>Обучение детей младшего школьного возраста понятию “робототехника”.
-Освоение понятий “программирование”, “алгоритм”, “программа” на примере конструктора LEGO WeDo</duties>
+    	<duties>Освоение понятий “программирование”, “алгоритм”,“программа”на примере конструктора LEGO WeDo</duties>
     </works>
     <works>
     	<name>Транспортная компания "SАТ"</name>
