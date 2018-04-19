@@ -63,20 +63,15 @@
 					<div class="col-md-10 col-sm-10 col-xs-10">
 						@foreach($info->education as $education)
 							<p class="work_ch" style="margin-top:10px !important;">{{$education->date}}</p>
-							<p class="work_tar">Место учебы:</p>
-							<p class="work_ch">{{$education->name}}</p>
-							<p class="work_tar">Специальность:</p>
-							<p class="work_ch">{{$education->lesson}}</p>
+							<p class="work_tar">Место учебы: {{$education->name}}</p>
+							<p class="work_tar">Специальность: {{$education->lesson}}</p>
+							
 						@endforeach
 					</div>
 				
 				</div>
 										
 			</div>
-			
-			
-			
-			
 			<div class="col-md-3 col-sm-3 col-xs-3">
 				<div class="skills">
 					<svg width="45px" height="45px" viewBox="0 0 155.739 155.739" style="enable-background:new 0 0 155.739 155.739;" xml:space="preserve">

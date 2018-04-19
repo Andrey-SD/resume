@@ -1,53 +1,76 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Резюме Андрей Деркач</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<link href="{{ URL::asset('img/icon.png')}}" rel="icon">
+	<link href='{{ URL::asset('fonts/droid.ttf')}}' type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link href='{{ URL::asset('css/main.css') }}' rel="stylesheet" type="text/css">
+	<link href='{{ URL::asset('css/print.css') }}' rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="nav">
+		<a href="{{ URL::asset('download')}}" title="скачать PDF"><img alt="скачать PDF" src="img/pdf.png"></a>
+		<a href="{{ URL::asset('print')}}" title="печать"><img alt="печать" src="img/print.png"></a>
+	</div>
+	<header>
+		<div class="row">
+			<div class="col-md-5 col-sm-5">
+				<h1>{{$info->name}} {{$info->family}}</h1>
+				<h3>{{$info->position}}</h3>
+			</div>
+			<div class="col-md-7 col-sm-7">
+				<ul>
+					<li>
+						<a href="{{ URL::asset('home')}}">Главная</a>
+						<a href="{{ URL::asset('resume')}}">Резюме</a>
+						<a href="{{ URL::asset('projects')}}">Проекты</a>
+						<a href="{{ URL::asset('contacts')}}">Контакты</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+		@yield('content')
+	</div>
+	<footer>
+		<div>	
+				<div style="background-image: url(img/phone.png);">
+					<div>
+						<p>Звоните</p>
+						<p>{{$info->phone_number}}</p>
+					</div>
+				</div>
+				<div style="background-image: url(img/mail.png);">
+						<p>Пишите</p>
+						<p>{{$info->email}}</p>
+				</div>
+				<div style="background-image: url(img/connect.png);">
+						<p>Заходите</p>
+						<p>
+							<a href="https://github.com/Andrey-SD?tab=repositories" title="GitHub" target="_blank">
+								<img src="img/git-logo.svg">
+							</a>
+							<a href="https://www.linkedin.com/in/%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%B4%D0%B5%D1%80%D0%BA%D0%B0%D1%87-4018a292/" title="Linkedin" target="_blank">
+								<img src="img/linked-logo.svg">
+							</a>
+							<a href="https://www.facebook.com/profile.php?id=100017494866601" title="Facebook" target="_blank">
+								<img src="img/facebook-logo.svg">
+							</a>
+						</p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
-
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+				</div>
+		</div>
+	</footer>
+</body>
+<script src="{{ URL::asset('js/active.js') }}"></script>
+<script src="{{ URL::asset('js/print.js') }}"></script>
+</html>

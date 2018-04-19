@@ -84,7 +84,7 @@
 		</div>
 	
 </section>
-<button>Печать</button>
+<button id="print">Печать</button>
 
 
 

@@ -72,4 +72,5 @@
 	</footer>
 </body>
 <script src="{{ URL::asset('js/active.js') }}"></script>
+<script src="{{ URL::asset('js/print.js') }}"></script>
 </html>

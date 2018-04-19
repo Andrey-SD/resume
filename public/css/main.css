@@ -52,7 +52,7 @@ section h1:not(.projects h1) {
 	text-align: right;
 }
 
-section img:not(.print img){
+section img{
 	display: block;
 	margin: 0 auto !important;
 }
@@ -118,6 +118,10 @@ footer>div{
 .resume li,.print li{
 	margin-left: 20px !important;
 	color: #8B8B8B; 
+}
+
+.resume td{
+	padding-right: 10px !important;
 }
 
 .skills:not(.print .skills){
