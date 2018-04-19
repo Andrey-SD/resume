@@ -35,7 +35,4 @@ Route::post('/my-dash','Admin\DashController@code_edit')->name('code_edit');
 
 Route::get('/print','Publish\PrintController@print');
 
-Route::get('/download','Publish\DownloadController@download');
-
-
-
+Route::get('/download','Publish\DownloadsController@download');
