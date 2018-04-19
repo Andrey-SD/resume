@@ -8,7 +8,36 @@
 						<p>Обо мне</p>
 					</div>
 					<div class="col-md-10 col-sm-10 col-xs-10">
-						<p>{{$info->about}}</p>
+						<table>
+			<tr>
+				<td>Телефон (Viber)</td>
+				<td>{{$info->phone_number}}</td>
+			</tr>
+			<tr>
+				<td>E-mail</td>
+				<td>{{$info->email}}</td>
+			</tr>
+			<tr>
+				<td>Дата рождения</td>
+				<td>{{$info->bd}}</td>
+			</tr>
+			<tr>
+				<td>Проживание</td>
+				<td>Днепр (Украина)</td>
+			</tr>
+			<tr>
+				<td>Возможность переезда</td>
+				<td>Харьков (Украина)</td>
+			</tr>
+			<tr>
+				<td>Семейное положение</td>
+				<td>Женат</td>
+			</tr>
+			<tr>
+				<td>Дети</td>
+				<td>Есть</td>
+			</tr>
+		</table>
 					</div>
 				
 				</div>
@@ -18,14 +47,11 @@
 					</div>
 					<div class="col-md-10 col-sm-10 col-xs-10">
 						@foreach($info->works as $work)
-							<p class="work_ch" style="margin-top:10px !important;">{{$work->date}}</p>
-							<p class="work_tar">Место работы:</p>
-							<p class="work_ch">{{$work->name}}</p>
-							<p class="work_tar">Должность:</p>
-							<p class="work_ch">{{$work->position}}</p>
-							<p class="work_tar">Обязанности:</p>
-							<p class="work_ch" style="border-bottom: 1px solid #8B8B8B;">{{$work->duties}}</p>
-							
+							<p class="frs">{{$work->date}}</p>
+							<p class="scn">{{$work->name}}</p>
+							<p class="tr">{{$work->position}}</p>
+							<p style="border-bottom: 1px dotted #8B8B8B; margin-bottom:5mm !important;">{{$work->duties}}</p>
+				
 						@endforeach
 					</div>
 				
