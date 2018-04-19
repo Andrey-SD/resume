@@ -93,12 +93,12 @@ section img{
 </style>
 <body>
 	<header>		
-			<div>
-				<h1>Деркач Андрей</h1>
-				<h3>junior WEB developer</h3>
+			<div style="display: inline-block;">
+				<h2 style="color: #4D4D4D; font-family: fantasy;">Деркач Андрей</h2>
+				<h2 style="color: #4D4D4D; font-family: fantasy;">junior WEB developer</h2>
 			</div>
-				<ul>
-					<li>
+				<ul style="display: inline-block; float: right;	margin-top: 37px;">
+					<li style="list-style-type: none;">
 						<a href="#">Главная</a>
 						<a href="#">Резюме</a>
 						<a href="#">Проекты</a>
@@ -111,7 +111,7 @@ section img{
 			<img src="">
 		</div>
 		<div style="display: inline-block; width: 60%; float: right;">
-			<h1>Здравствуйте, меня зовут Андрей.</h1>
+			<h2 style="color: #4D4D4D; font-family: fantasy;">Здравствуйте, меня зовут Андрей.</h2>
 			<div class="links">
 				<a href="">Резюме</a>
 				<a href="">Проекты</a>
