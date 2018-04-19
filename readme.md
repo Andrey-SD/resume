@@ -92,8 +92,7 @@ section img{
 
 </style>
 <body>
-	<header>
-		
+	<header>		
 			<div>
 				<h1>Деркач Андрей</h1>
 				<h3>junior WEB developer</h3>
