@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 class DownloadsController extends Controller
 {
 	public function download() {
-	$file_path = public_path('files/AndreyDerkach.pdf');
+	$file_path = public_path('files/Andrey_Derkach_resume.pdf');
     return response()->download($file_path);
 	}
 }

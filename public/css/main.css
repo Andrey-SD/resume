@@ -203,7 +203,7 @@ form>*:not([type="submit"]){
 	color: white;
 }
 
-input[type="submit"],.print~button{
+input[type="submit"],.btnprn>button{
 	width: 100%;
 	height: 25px;
 	border-style: none;
@@ -286,6 +286,10 @@ textarea{
 		display: none;
 	}
 	
+	button{
+		display: none;
+	}
+	
 	
 	
 	
@@ -317,7 +321,7 @@ textarea{
 		font-size: 5vw;
 	}
 	
-	h1, h3{
+	h1:not(.print h1), h3{
 		text-align: right;
 		padding: 0px 3px 0px 3px !important;
 	}

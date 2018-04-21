@@ -2,54 +2,49 @@
 @section('content')
 
 <section class="print">
-	<h1>{{$info->family}} {{$info->name}} </h1>
-	<h3>{{$info->position}}</h3>
 	<div>
-		<table>
-			<tr>
-				<td>Телефон (Viber)</td>
-				<td>{{$info->phone_number}}</td>
-			</tr>
-			<tr>
-				<td>E-mail</td>
-				<td>{{$info->email}}</td>
-			</tr>
-			<tr>
-				<td>Дата рождения</td>
-				<td>{{$info->bd}}</td>
-			</tr>
-			<tr>
-				<td>Проживание</td>
-				<td>Днепр (Украина)</td>
-			</tr>
-			<tr>
-				<td>Возможность переезда</td>
-				<td>Харьков (Украина)</td>
-			</tr>
-			<tr>
-				<td>Семейное положение</td>
-				<td>Женат</td>
-			</tr>
-			<tr>
-				<td>Дети</td>
-				<td>Есть</td>
-			</tr>
-		</table>
-		<img src='{{ URL::asset('img/photo.png')}}'>
+		<img src="{{URL::asset('img/photo.png')}}" alt="photo">
 	</div>
-		<div class="rw">
-			<p>Образование:</p>
+	<h1>{{$info->name}} {{$info->family}}</h1>
+	<p>{{$info->position}}</p>
+	<div class="row">
+		<div class="col-md-6 col-sm-6 col-xs-6 lc">
 			<div>
+				<h2>Здравствуйте</h2>
+				<p>Меня зовут {{$info->name}}, прошу рассмотреть мою кандидатуру на позицию {{$info->position}}.</p>
+			</div>
+			<div>
+				<h2>Образование</h2>
 				@foreach($info->education as $education)
-					<p>Период: {{$education->date}}</p>
-					<p>Место учебы: {{$education->name}}</p>
-					<p>Специальность: {{$education->lesson}}</p>
+					<p class="work_ch" style="margin-top:10px !important;">{{$education->date}}</p>
+					<p class="work_tar"><span>{{$education->name}}</span></p>
+					<p class="work_tar">{{$education->lesson}}</p>
+				@endforeach
+			</div>
+			<div>
+				<h2>Опыт работы</h2>
+				@foreach($info->works as $work)
+					<p>{{$work->date}}</p>
+					<p><span>{{$work->name}}</span></p>
+					<p>{{$work->position}}</p>
+					<p style="border-bottom: 1px dotted #8B8B8B; margin:5mm 0mm 7mm !important;">{{$work->duties}}</p>				
 				@endforeach
 			</div>
 		</div>
-		<div class="rw">
-			<p>Навыки:</p>
-			<div class="skills">
+		<div class="col-md-6 col-sm-6 col-xs-6 rc">
+			<div>
+				<h2>Контакты</h2>
+				<p><span>г.Днепр пер.Брянский 5 кв 2</span></p>
+				<p><span>тел: </span>{{$info->phone_number}} (Viber)</p>
+				<p><span>e-mail: </span>{{$info->email}}</p>
+				<a class="gitlink" href="https://github.com/Andrey-SD?tab=repositories" title="GitHub" target="_blank"> https://github.com/Andrey-SD</a>
+				</br>
+				<a class="linkedin" href="https://www.linkedin.com/in/андрей-деркач-4018a292/" title="Linkedin" target="_blank"> https://www.linkedin.com/in/андрей-деркач-4018a292/</a>
+				</br>
+				<a class="facebook" href="https://www.facebook.com/profile.php?id=100017494866601" title="Facebook" target="_blank"> https://www.facebook.com/profile.php?id=100017494866601</a>
+			</div>
+			<div>
+				<h2>Навыки</h2>
 				<dl>
 					<dt>HTML</dt>
 					<dt>CSS</dt>
@@ -70,21 +65,20 @@
 					<dt>GitHub</dt>
 				</dl>
 			</div>
-		</div>
-		<div class="rw">
-			<p>Опыт работы:</p>
 			<div>
-				@foreach($info->works as $work)
-					<p class="frs">{{$work->date}}</p>
-					<p class="scn">{{$work->name}}</p>
-					<p class="tr">{{$work->position}}</p>
-					<p style="border-bottom: 1px dotted #8B8B8B; margin-bottom:5mm !important;">{{$work->duties}}</p>
-				@endforeach
-			</div>			
+				<h2>Увлечения</h2>
+					@foreach($info->hobbi as $count)
+					<p>{{ $count }}</p>
+					@endforeach
+			</div>
 		</div>
+	</div>
 	
 </section>
-<button id="print">Печать</button>
+<div class="btnprn">
+	<button id="print">Печать</button>
+</div>
+
 
 
 

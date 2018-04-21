@@ -1,98 +1,85 @@
 .print{
-	padding: 2mm;
+	padding: 2mm !important;
 	width: 210mm;
 	background-color: white;
 	
 }
 
-button{
-	width: 210mm !important;
-	display: block;
-	margin: 5px auto 65px !important;
-}
-
-.print h3,.print>div{
-/*	padding: 5px;*/
-	border-bottom: 1px solid #8B8B8B;
-}
-
-.print>div{
-	
-	padding: 10px 5px 5px 100px !important;
-}
-
-/*
-.print>div:not(:first-child){
-	display: inline-block;
-}
-*/
-
-.print table{
-	width: 60%;
-	
-	
-}
-
 .print img{
-	vertical-align: top;
-	height: 50mm;
+	margin-bottom: 3mm !important;
+	height: 40mm;
 }
 
-/*
-.print>div{
-	padding: 3mm !important;
-	
+.print a{
+	text-align: left;
 }
-*/
 
-.print>div>*{
+.print a>img{
+	width: 4mm;
+}
+
+.print h1{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+}
+
+.row>div>div{
+	margin-bottom: 10mm !important;
+}
+
+.print>p{
+	text-align: center;
+	font-size: 17px;
+	margin-bottom: 7mm !important;
+}
+
+.lc h2,.lc p{
+	text-align: right;
+}
+
+h2{
+	text-transform: uppercase;
+	font-size: 25px;
+	margin-bottom: 3mm !important;
+}
+
+span{
+	font-weight: bold;
+}
+
+.lc,.rc{
+	padding-left: 7mm !important;
+	padding-right: 7mm !important;
+}
+
+.btnprn{
+	width: 210mm;
+	margin: 0 auto;
+}
+
+.btnprn>button{
+	margin-top: 10px;
+	margin-bottom: 80px !important;
+}
+
+.gitlink:before{
+	content: url("../img/git-logo.svg");
 	display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
 }
 
-/*
-.print>div>p{
-	color: #8B8B8B;
-	font-weight: bold;
-	width: 25%;
-}
-*/
-
-.rw>p{
-	color: #8B8B8B;
-	font-weight: bold;
-	width: 25%;
+.linkedin:before{
+	content: url("../img/linked-logo.svg");
+	display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
 }
 
-.rw>div{
-	width: 70%;
+.facebook:before{
+	content: url("../img/facebook-logo.svg");
+	display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
 }
-
-.frs{
-	font-style: italic;
-}
-
-.scn{
-	font-weight: bold;
-}
-
-.tr{
-	font-style:oblique;
-}
-
-.print tr{
-	
-	border-bottom: 1px dotted #8B8B8B;	
-}
-
-.print td{
-	width: 50%;
-	
-}
-
-.print p{
-	vertical-align: top;
-/*	margin-right: 75px;*/
-}
-
-
-
