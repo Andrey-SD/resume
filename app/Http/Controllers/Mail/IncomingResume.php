@@ -10,6 +10,7 @@ class IncomingResume extends Controller
 {
     public function send(Request $request)
 	{
+		
         $this->request = $request;
         $this->arr = ['name'=>$request->name,
 					  'email'=>$request->email,
@@ -17,7 +18,8 @@ class IncomingResume extends Controller
         
 		Mail::send('mails.incoming_resume',[ 'mes'=>$this->arr ], function ($message) {
            $message->to($this->request->email,'')
-                    ->subject('Резюме Junior PHP developer Андрей Деркач ');
+                    ->subject('Резюме Junior PHP developer Андрей Деркач ')
+			   		->attach('files/Andrey_Derkach_resume.pdf');
     });
 	return view('sent');
 	}
