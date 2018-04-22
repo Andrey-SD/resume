@@ -21,7 +21,7 @@
 .print h1{
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 30px;
+	font-size: 35px;
 }
 
 .row>div>div{
@@ -46,6 +46,10 @@ h2{
 
 span{
 	font-weight: bold;
+}
+
+.row p,.row span,.row dt,.row li{
+	font-size: 14px;
 }
 
 .lc,.rc{

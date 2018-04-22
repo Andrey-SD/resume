@@ -3,9 +3,9 @@
     <name>Андрей</name>
     <family>Деркач</family>
 <bd>5 дек 1985</bd>
-    <position>php developer</position>
+    <position>Junior PHP developer</position>
     <title>Здравствуйте, меня зовут Андрей.</title>
-    <about>Свой 'Hello World' я написал еще в школе, на языке Pascal. С тех пор программирование стало для меня хобби, а профессия программиста мечтой. Сейчас я готов воплотить свою мечту в жизнь.</about>
+    <about>Свой 'Hello World' я написал еще в школе, на языке Pascal. С тех пор программирование стало для меня хобби, а профессия программиста мечтой. Сейчас я готов воплотить свою мечту в жизнь, и ищу компанию с которой я смогу утолить свою жажду к знаниям.</about>
     <email>andrey.sd.post@gmail.com</email>
     <phone_number>+38 098 320 61 41</phone_number>
     <personal_qualities>
@@ -17,12 +17,8 @@
         <value>80</value>
     </personal_qualities>
     <personal_qualities>
-        <qual>Неконфликтность</qual>
-        <value>90</value>
-    </personal_qualities>
-    <personal_qualities>
-        <qual>Коллективность</qual>
-        <value>70</value>
+        <qual>Конфликтность</qual>
+        <value>20</value>
     </personal_qualities>
     <personal_qualities>
         <qual>Внимательность</qual>

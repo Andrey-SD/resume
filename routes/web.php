@@ -23,6 +23,8 @@ Route::get('/contacts','Publish\ContactsController@contacts');
 
 Route::post('/send-mail','Mail\Incoming@send');
 
+Route::post('/send-mail-resume','Mail\IncomingResume@send');
+
 Route::get('/dash-auth','Auth\LoginController@showLoginForm');
 
 Route::post('/dash-auth','Auth\LoginController@login')->name('login');

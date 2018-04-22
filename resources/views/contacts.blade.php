@@ -18,28 +18,23 @@
 				<a href="https://github.com/Andrey-SD?tab=repositories" title="GitHub" target="_blank">GitHub</a>
 			</p>
 		</div>
-
 		<div class="col-md-6 col-sm-6">
 			<h4>Вы можете отправить мне письмо.</h4>
 			<h4>Я обязательно отвечу Вам в ближайшее время.</h4>
 			<form method="post" action="send-mail" accept-charset="UTF-8" >
 			{{ csrf_field() }}
-					<input type="text" name="name" placeholder="Имя" required>
-					<input type="email" name="email" placeholder="Ваш Email" required>
-					<input type="text" name="subject" placeholder="Тема" required>
-					<textarea name="message" placeholder="Сообщение" required></textarea>
-					<input type="submit">		
-				</form>
-
-
-
+				<input type="text" name="name" placeholder="Имя" required>
+				<input type="email" name="email" placeholder="Ваш Email" required>
+				<input type="text" name="subject" placeholder="Тема" required>
+				<textarea name="message" placeholder="Сообщение" required></textarea>
+				<input type="submit">		
+			</form>
 		</div>
 	</div>
 </section>
 <div id="prelodaer">
     <img src="{{ URL::asset('img/preloader.gif')}}" alt="preloder">
 </div>
-
 <script>
     $('form').submit(function(){
         $('#prelodaer').css('display', 'block');

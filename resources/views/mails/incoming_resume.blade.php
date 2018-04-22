@@ -15,20 +15,139 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<link href='{{ URL::asset('css/main.css') }}' rel="stylesheet" type="text/css">
 	<link href='{{ URL::asset('css/print.css') }}' rel="stylesheet" type="text/css">
+	<style type="text/css">
+		body{
+			background-color: #EAE5E5;
+		}
+
+		h1,h3,ul,p,dl{
+			margin: 0;
+			padding: 0;
+		}
+
+		header,section{
+			width: 800px;
+			margin: 0 auto;
+		}
+
+		h1, h3{
+			color: #4D4D4D;
+			font-family: fantasy;
+		}
+		header ul{
+			display: inline-block;
+			float: right;
+			margin-top: 37px;
+		}
+
+		header li{
+			list-style-type: none;
+		}
+
+		header li>a{
+			font-size: 20px;
+			color: #8B8B8B;
+			margin-left: 25px;
+			font-family: fantasy;
+		}
+		
+		.row>div{
+			display: inline-block;
+		}
+		
+		header ul{
+			display: inline-block;
+			float: right;
+			margin-top: 37px;
+		}
+
+		header li{
+			list-style-type: none;
+		}
+
+		header li>a{
+			font-size: 20px;
+			color: #8B8B8B;
+			margin-left: 25px;
+			font-family: fantasy;
+		}
+
+		a:hover{
+			color: #61D0D4;
+			text-decoration: none;
+		}
+		
+		.links{
+			text-align: center;
+		}
+
+		.links a{
+			color: white;
+			font-size: 15px;
+			text-align: center;
+			line-height: 100px;
+			border-radius: 50px;
+			width: 100px;
+			height: 100px;
+			margin: 30px 10px 30px 10px;
+			display: inline-block;
+		}
+		
+		section img{
+			display: block;
+			margin: 0 auto !important;
+		}
+		
+		section h1,section p{
+			text-align: right;
+		}
+		
+		footer{
+			margin-top: 50px;
+			width: 100%;
+			position: fixed;
+			bottom: 0;
+			background-color: #E83556;
+			height: 60px;
+		}
+
+		footer>div>div{
+			background-repeat: no-repeat;
+			background-position: 5px center;
+			width: 25%;
+			height: 60px;
+			display: inline-block;
+			padding-left: 55px;
+			vertical-align: top;
+		}
+		
+		footer>div p{
+			color: white;
+		}
+
+		footer>div p:first-child{
+			font-weight: bold;
+		}
+
+		footer>div{
+			width: 800px;
+			margin: 0 auto;
+		}
+
+
+	</style>
 </head>
 <body>
-	<div class="nav">
-		
-		<a href="{{ URL::asset('download')}}" title="скачать PDF"><img alt="скачать PDF" src="{{ URL::asset('img/pdf.png')}}"></a>
-		<a href="{{ URL::asset('print')}}" title="печать"><img alt="печать" src="{{ URL::asset('img/print.png')}}"></a>
+	<div class="nav" style="padding:2px;width:100px;margin-left:auto;">
+		<a href="{{ URL::asset('download')}}" title="скачать PDF"><img alt="скачать PDF" src="{{ URL::asset('img/pdf.png')}}"></a><a href="{{ URL::asset('print')}}" title="печать"><img alt="печать" src="{{ URL::asset('img/print.png')}}"></a>
 	</div>
 	<header>
 		<div class="row">
-			<div class="col-md-5 col-sm-5">
+			<div style="width:39%">
 				<h1>{{$info->name}} {{$info->family}}</h1>
 				<h3>{{$info->position}}</h3>
 			</div>
-			<div class="col-md-7 col-sm-7">
+			<div style="width:59%">
 				<ul>
 					<li>
 						<a href="{{ URL::asset('home')}}">Главная</a>
@@ -40,8 +159,22 @@
 			</div>
 		</div>
 	</header>
-		@yield('content')
-	
+	<section>
+	<div class="row">
+		<div style="width:39%">
+			<img src='{{ URL::asset('img/photo.png')}}'>
+		</div>
+		<div style="width:59%">
+			<h1>Здравствуйте, меня зовут {{$info->name}}.</h1>
+			<div class="links">
+				<a href="{{ URL::asset('resume')}}" style="background-color:#E83556;">Резюме</a>
+				<a href="{{ URL::asset('projects')}}" style="background-color:#61D0D4;">Проекты</a>
+				<a href="{{ URL::asset('resume')}}" style="background-color:#D1C926;">Навыки</a>
+			</div>
+			<p>{{$info->about}}</p>
+		</div>
+	</div>
+	</section>
 	<footer>
 		<div>	
 				<div style="background-image: url({{ URL::asset('img/phone.png')}});">
@@ -72,6 +205,3 @@
 		</div>
 	</footer>
 </body>
-<script src="{{ URL::asset('js/active.js') }}"></script>
-<script src="{{ URL::asset('js/print.js') }}"></script>
-</html>
