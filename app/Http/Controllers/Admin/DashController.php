@@ -17,4 +17,5 @@ class DashController extends Controller
 		file_put_contents('data.xml',$request->code);
 		return redirect('/');
 	}
+	
 }

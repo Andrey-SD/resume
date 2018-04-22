@@ -12,9 +12,10 @@
 	</form>
 	<h3>Отправить резюме</h3>
 	<form method="post" action="send-mail-resume" accept-charset="UTF-8" >
-			{{ csrf_field() }}
-				<input type="email" name="email" placeholder="Email" required>
-				<input type="submit">		
-			</form>
+		{{ csrf_field() }}
+			<input type="email" name="email" placeholder="Email" required>
+			<input type="submit">		
+	</form>
+	
 </section>
 @endsection

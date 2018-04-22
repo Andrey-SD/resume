@@ -9,7 +9,7 @@
 			</div>
 			<div class="col-md-5 col-sm-5">
 				<div class="project_num">
-					<p>Проект | {{ sprintf("%'.02d\n",++$inc) }}</p>
+					<p>Проект {{ sprintf("%'.02d\n",++$inc) }}</p>
 				</div>
 				<h1>{{$project->name}}</h1>
 				<p>{{$project->description}}</p>
