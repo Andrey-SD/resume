@@ -4,17 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Резюме Андрей Деркач</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-	<link href="{{ URL::asset('img/icon.png')}}" rel="icon">
-	<link href='{{ URL::asset('fonts/droid.ttf')}}' type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<link href='{{ URL::asset('css/main.css') }}' rel="stylesheet" type="text/css">
-	<link href='{{ URL::asset('css/print.css') }}' rel="stylesheet" type="text/css">
+	
 	<style type="text/css">
 		body{
 			background-color: #EAE5E5;
@@ -74,6 +64,10 @@
 
 		a:hover{
 			color: #61D0D4;
+			text-decoration: none;
+		}
+		
+		a{
 			text-decoration: none;
 		}
 		
@@ -150,10 +144,10 @@
 			<div style="width:59%">
 				<ul>
 					<li>
-						<a href="{{ URL::asset('home')}}">Главная</a>
-						<a href="{{ URL::asset('resume')}}">Резюме</a>
-						<a href="{{ URL::asset('projects')}}">Проекты</a>
-						<a href="{{ URL::asset('contacts')}}">Контакты</a>
+						<a href="{{ URL::asset('home')}}" style="color: #8B8B8B;">Главная</a>
+						<a href="{{ URL::asset('resume')}}" style="color: #8B8B8B;">Резюме</a>
+						<a href="{{ URL::asset('projects')}}" style="color: #8B8B8B;">Проекты</a>
+						<a href="{{ URL::asset('contacts')}}" style="color: #8B8B8B;">Контакты</a>
 					</li>
 				</ul>
 			</div>

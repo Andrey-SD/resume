@@ -16,9 +16,8 @@ class IncomingResume extends Controller
 					  'message'=>$request->message];
         
 		Mail::send('mails.incoming_resume',[ 'mes'=>$this->arr ], function ($message) {
-           $message->from($this->request->email, "(Резюме):".$this->request->name."<<".$this->request->email.">>");
            $message->to($this->request->email,'')
-                    ->subject($this->request->subject);
+                    ->subject('Резюме Junior PHP developer Андрей Деркач ');
     });
 	return view('sent');
 	}
