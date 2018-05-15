@@ -34,14 +34,13 @@
 		<div class="col-md-6 col-sm-6 col-xs-6 rc">
 			<div>
 				<h2>Контакты</h2>
-				<p><span>г.Днепр пер.Брянский 5 кв 2</span></p>
+				<p><span>г.Днепр (Харьков)</span></p>
 				<p><span>тел: </span>{{$info->phone_number}} (Viber)</p>
 				<p><span>e-mail: </span>{{$info->email}}</p>
 				<a class="gitlink" href="https://github.com/Andrey-SD?tab=repositories" title="GitHub" target="_blank"> https://github.com/Andrey-SD</a>
 				</br>
 				<a class="linkedin" href="https://www.linkedin.com/in/андрей-деркач-4018a292/" title="Linkedin" target="_blank"> https://www.linkedin.com/in/андрей-деркач-4018a292/</a>
 				</br>
-				<a class="facebook" href="https://www.facebook.com/profile.php?id=100017494866601" title="Facebook" target="_blank"> https://www.facebook.com/profile.php?id=100017494866601</a>
 			</div>
 			<div>
 				<h2>Навыки</h2>

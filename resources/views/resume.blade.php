@@ -23,15 +23,7 @@
 			</tr>
 			<tr>
 				<td>Проживание</td>
-				<td>Днепр (Украина)</td>
-			</tr>
-			<tr>
-				<td>Семейное положение</td>
-				<td>Женат</td>
-			</tr>
-			<tr>
-				<td>Дети</td>
-				<td>Есть</td>
+				<td>Днепр, Харьков (Украина)</td>
 			</tr>
 		</table>
 					</div>
@@ -100,26 +92,7 @@
 						<dt>GitHub</dt>
 					</dl>
 				</div>
-				<div class="skills">
-					<svg viewBox="0 0 277.58 277.58" style="enable-background:new 0 0 277.58 277.58;" xml:space="preserve" width="45px" height="45px">
-						<g transform="matrix(0.976285 0 0 0.976285 3.29142 3.29142)">
-							<g>
-								<path d="M138.46,164.287c-38.628,0-69.925-37.519-69.925-83.767C68.535,34.277,99.832,0,138.46,0   c38.634,0,69.957,34.277,69.957,80.52C208.417,126.768,177.093,164.287,138.46,164.287z M29.689,277.528   c0,0-14.832,0.979-21.365-8.023c-3.53-4.863-1.071-14.718,1.343-20.217l5.912-13.473c0,0,16.35-36.567,34.962-57.757   c11.433-12.994,25.031-10.035,33.826-5.809c5.417,2.6,11.542,10.176,16.018,14.191c6.168,5.532,17.057,11.819,34.859,12.173h10.922   c17.791-0.354,28.68-6.641,34.843-12.173c4.471-4.014,10.427-11.825,15.795-14.511c8.072-4.041,20.358-6.527,31.492,6.13   c18.618,21.191,33.363,58.421,33.363,58.421l6.059,13.212c2.507,5.461,5.075,15.267,1.643,20.195   c-6.124,8.811-19.874,7.642-19.874,7.642S29.689,277.528,29.689,277.528z" data-original="#458A49" class="active-path" data-old_color="#458A49" fill="#61D0D4"/>
-							</g>
-						</g> 
-					</svg>
-					<h4>Личные качества</h4>
-					@foreach($info->personal_qualities as $count)
-					<div class="progress">
-					  <div class="progress-bar progress-bar-striped active" role="progressbar"
-					  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:{{ $count->value }}%; background-color: #E83556;">
-						<p>{{ $count->qual }}</p>
-					  </div>
-					</div>
-					@endforeach
 				
-					
-				</div>
 				<div class="skills">
 					<svg width="45px" height="45px" viewBox="0 0 476.264 476.265" style="enable-background:new 0 0 476.264 476.265;" xml:space="preserve">
 						<g>

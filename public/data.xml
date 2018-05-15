@@ -40,6 +40,12 @@
        <description>ТЗ для этого проекта было найдено на просторах интернета и написано для развития навыков при работе с MySQL базой данных, технологией AJAX, библиотекой jQuery и jQuery UI</description>
        <link_heroku>https://todo-list-andrey.herokuapp.com/</link_heroku>
     </project>
+<project>
+       <preview_img_link>img/Billboard.png</preview_img_link>
+       <name>Billboard</name>
+       <description>ТЗ для этого проекта было найдено на просторах интернета и написано для развития навыков с фреймворком Laravel</description>
+       <link_heroku>http://billboard-andrey-derkach.herokuapp.com/</link_heroku>
+    </project>
     <works>
     	<name>"Детская IT Школа Smart"</name>
     	<date>Янв 2018 - наст.</date>
@@ -50,6 +56,12 @@
     	<name>Транспортная компания "SАТ"</name>
     	<date>Дек 2017 - наст.</date>
     	<position>Оператор приемки/выдачи ТМЦ</position>
+    	<duties></duties>
+    </works>
+<works>
+    	<name>Мебельный завод "Прогресс"</name>
+    	<date>Март 2017 - Сент 2017</date>
+    	<position>Сборщик мягкой мебели</position>
     	<duties></duties>
     </works>
     <works>
