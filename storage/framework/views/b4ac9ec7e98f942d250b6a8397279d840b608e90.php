@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="<?php echo e(app()->getLocale()); ?>">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +14,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<link href='<?php echo e(asset('css/main.css')); ?>' rel="stylesheet" type="text/css">
-	<link href='<?php echo e(asset('css/print.css')); ?>' rel="stylesheet" type="text/css">
+	<link href='<?php echo e(URL::asset('css/main.css')); ?>' rel="stylesheet" type="text/css">
+	<link href='<?php echo e(URL::asset('css/print.css')); ?>' rel="stylesheet" type="text/css">
 </head>
+
 <body>
 	<div class="nav">
 		<a href="<?php echo e(URL::asset('download')); ?>" title="скачать PDF"><img alt="скачать PDF" src="<?php echo e(URL::asset('img/pdf.png')); ?>"></a>
@@ -39,34 +41,35 @@
 			</div>
 		</div>
 	</header>
-		<?php echo $__env->yieldContent('content'); ?>
-	
-	<footer>
-		<div>	
-				<div style="background-image: url(<?php echo e(URL::asset('img/phone.png')); ?>);">
-					<div>
-						<p>Звоните</p>
-						<p><?php echo e($info->phone_number); ?></p>
-					</div>
-				</div>
-				<div style="background-image: url(<?php echo e(URL::asset('img/mail.png')); ?>);">
-						<p>Пишите</p>
-						<p><?php echo e($info->email); ?></p>
-				</div>
-				<div style="background-image: url(<?php echo e(URL::asset('img/connect.png')); ?>);">
-						<p>Заходите</p>
-						<p>
-							<a href="https://github.com/Andrey-SD?tab=repositories" title="GitHub" target="_blank">
-								<img src="<?php echo e(URL::asset('img/git-logo.svg')); ?>">
-							</a>
-							<a href="https://www.facebook.com/profile.php?id=100017494866601" title="Facebook" target="_blank">
-								<img src="<?php echo e(URL::asset('img/facebook-logo.svg')); ?>">
-							</a>
-						</p>
+	<?php echo $__env->yieldContent('content'); ?>
 
+	<footer>
+		<div>
+			<div style="background-image: url(<?php echo e(URL::asset('img/phone.png')); ?>);">
+				<div>
+					<p>Звоните</p>
+					<p><?php echo e($info->phone_number); ?></p>
 				</div>
+			</div>
+			<div style="background-image: url(<?php echo e(URL::asset('img/mail.png')); ?>);">
+				<p>Пишите</p>
+				<p><?php echo e($info->email); ?></p>
+			</div>
+			<div style="background-image: url(<?php echo e(URL::asset('img/connect.png')); ?>);">
+				<p>Заходите</p>
+				<p>
+					<a href="https://github.com/Andrey-SD?tab=repositories" title="GitHub" target="_blank">
+						<img src="<?php echo e(URL::asset('img/git-logo.svg')); ?>">
+					</a>
+					<a href="https://www.facebook.com/profile.php?id=100017494866601" title="Facebook" target="_blank">
+						<img src="<?php echo e(URL::asset('img/facebook-logo.svg')); ?>">
+					</a>
+				</p>
+
+			</div>
 		</div>
 	</footer>
 </body>
 <script src="<?php echo e(URL::asset('js/active.js')); ?>"></script>
+
 </html>
