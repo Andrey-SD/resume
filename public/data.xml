@@ -2,11 +2,12 @@
 <resume>
     <name>Андрей</name>
     <family>Деркач</family>
-<bd>5 дек 1985</bd>
-    <position>Junior PHP developer</position>
+<bd>5 дек 1985г</bd>
+    <position>Front-End developer (trainee/junior)</position>
     <title>Здравствуйте, меня зовут Андрей.</title>
     <about>Свой 'Hello World' я написал еще в школе, на языке Pascal. С тех пор программирование стало для меня хобби, а профессия программиста мечтой. Сейчас я готов воплотить свою мечту в жизнь, и ищу компанию с которой я смогу утолить свою жажду к знаниям.</about>
     <email>andrey.sd.post@gmail.com</email>
+		<telegram_nickname>@Andrey_SD</telegram_nickname>
     <phone_number>+38 098 320 61 41</phone_number>
     <personal_qualities>
         <qual>Ответственноcть</qual>
@@ -30,9 +31,9 @@
     <hobbi>HandeMade</hobbi>
     <project>
        <preview_img_link>img/sat.png</preview_img_link>
-       <name>Satellite</name>
+       <name>Acceleration</name>
        <description>Проект был написан в рамках лабараторной работы на тему "Объектная модель HTML документа"</description>
-       <link_heroku>https://satellite-andrey.herokuapp.com/index.html</link_heroku>
+       <link_heroku>https://acceleration-car.herokuapp.com/</link_heroku>
     </project>
     <project>
        <preview_img_link>img/todo.png</preview_img_link>
@@ -46,32 +47,31 @@
        <description>ТЗ для этого проекта было найдено на просторах интернета и написано для развития навыков с фреймворком Laravel</description>
        <link_heroku>http://billboard-andrey-derkach.herokuapp.com/</link_heroku>
     </project>
+		<works>
+    	<name>"Freelance"</name>
+    	<date>Июнь 2020 - наст.</date>
+    	<position>Преподаватель программирования.</position>
+    	<duties></duties>
+    </works>
+		<works>
+    	<name>"Студия Lego-конструирования «Техно-kids»"</name>
+    	<date>Сент 2020 - наст.</date>
+    	<position>Преподаватель робототехники и программирования.</position>
+    	<duties>Освоение понятий “программирование”, “алгоритм”,“программа” на примере конструктора LEGO WeDo.</duties>
+    </works>
     <works>
     	<name>"Детская IT Школа Smart"</name>
-    	<date>Янв 2018 - наст.</date>
-    	<position>Преподаватель роботехники</position>
-    	<duties>Освоение понятий “программирование”, “алгоритм”,“программа”на примере конструктора LEGO WeDo</duties>
-    </works>
-    <works>
-    	<name>Транспортная компания "SАТ"</name>
-    	<date>Дек 2017 - наст.</date>
-    	<position>Оператор приемки/выдачи ТМЦ</position>
-    	<duties></duties>
-    </works>
-<works>
-    	<name>Мебельный завод "Прогресс"</name>
-    	<date>Март 2017 - Сент 2017</date>
-    	<position>Сборщик мягкой мебели</position>
-    	<duties></duties>
-    </works>
-    <works>
-    	<name>“ЕВРАЗ” ДМЗ им.Петровского</name>
-    	<date>Апр 2012- Дек 2016</date>
-    	<position>Оператор автоматизированной линии металлопроката</position>
-    	<duties>Настройка и контроль работы линии горячего металлопроката.</duties>
+    	<date>Янв 2018 - Июнь 2020.</date>
+    	<position>Преподаватель робототехники и программирования.</position>
+    	<duties>Освоение понятий “программирование”, “алгоритм”,“программа” на примере конструктора LEGO WeDo.</duties>
     </works>
     <education>
-    	<date>Мар. 2017-Ноя. 2017</date>
+    	<date>Июль. 2018 - Авг. 2018</date>
+    	<name>NixSolutions</name>
+    	<lesson>PHP developer</lesson>
+    </education>
+		<education>
+    	<date>Мар. 2017 - Ноя. 2017</date>
     	<name>Level UP</name>
     	<lesson>Web разработчик с использованием языка PHP</lesson>
     </education>

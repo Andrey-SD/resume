@@ -1,3 +1,5 @@
-$('#print').on('click', function(){
-	window.print();
+document.addEventListener('DOMContentLoaded', () => {
+	setTimeout(() => {
+		window.print();
+	}, 2000);
 });

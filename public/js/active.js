@@ -1,5 +1,5 @@
-$(document).ready( function(){
-	$('header a').each( function(){
-		$('header a[href="'+window.location.href+'"]').addClass('active');
-	});
+document.addEventListener('DOMContentLoaded', function () {
+	let link = document.querySelector('header a[href="'+window.location.href+'"]');
+	console.log('header a[href="'+window.location.href+'"]');
+	link.classList.add('active');
 });

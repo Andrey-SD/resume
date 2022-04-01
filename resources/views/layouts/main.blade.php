@@ -13,12 +13,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<link href='{{ URL::asset('css/main.css') }}' rel="stylesheet" type="text/css">
-	<link href='{{ URL::asset('css/print.css') }}' rel="stylesheet" type="text/css">
+	<link href='{{asset('css/main.css') }}' rel="stylesheet" type="text/css">
+	<link href='{{asset('css/print.css') }}' rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="nav">
-		
 		<a href="{{ URL::asset('download')}}" title="скачать PDF"><img alt="скачать PDF" src="{{ URL::asset('img/pdf.png')}}"></a>
 		<a href="{{ URL::asset('print')}}" title="печать"><img alt="печать" src="{{ URL::asset('img/print.png')}}"></a>
 	</div>
@@ -60,9 +59,6 @@
 							<a href="https://github.com/Andrey-SD?tab=repositories" title="GitHub" target="_blank">
 								<img src="{{ URL::asset('img/git-logo.svg')}}">
 							</a>
-							<a href="https://www.linkedin.com/in/%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%B4%D0%B5%D1%80%D0%BA%D0%B0%D1%87-4018a292/" title="Linkedin" target="_blank">
-								<img src="{{ URL::asset('img/linked-logo.svg')}}">
-							</a>
 							<a href="https://www.facebook.com/profile.php?id=100017494866601" title="Facebook" target="_blank">
 								<img src="{{ URL::asset('img/facebook-logo.svg')}}">
 							</a>
@@ -73,5 +69,4 @@
 	</footer>
 </body>
 <script src="{{ URL::asset('js/active.js') }}"></script>
-<script src="{{ URL::asset('js/print.js') }}"></script>
 </html>

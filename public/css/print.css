@@ -1,89 +1,102 @@
-.print{
+.print {
 	padding: 2mm !important;
 	width: 210mm;
 	background-color: white;
-	
+
 }
 
-.print img{
+.print img {
 	margin-bottom: 3mm !important;
 	height: 40mm;
 }
 
-.print a{
+.print a {
 	text-align: left;
 }
 
-.print a>img{
+.print a>img {
 	width: 4mm;
 }
 
-.print h1{
+.print h1 {
 	text-transform: uppercase;
-	text-align: center;
+	text-align: center !important;
 	font-size: 35px;
 }
 
-.row>div>div{
+.row>div>div {
 	margin-bottom: 10mm !important;
 }
 
-.print>p{
+.print>p {
 	text-align: center;
 	font-size: 17px;
 	margin-bottom: 7mm !important;
 }
 
-.lc h2,.lc p{
+.lc h2,
+.lc p {
 	text-align: right;
 }
 
-h2{
+h2 {
 	text-transform: uppercase;
 	font-size: 25px;
 	margin-bottom: 3mm !important;
 }
 
-span{
+span {
 	font-weight: bold;
 }
 
-.row p,.row span,.row dt,.row li{
+.row p,
+.row span,
+.row dt,
+.row li {
 	font-size: 14px;
 }
 
-.lc,.rc{
+.lc,
+.rc {
 	padding-left: 7mm !important;
 	padding-right: 7mm !important;
 }
 
-.btnprn{
+.btnprn {
 	width: 210mm;
 	margin: 0 auto;
 }
 
-.btnprn>button{
+.btnprn>button {
 	margin-top: 10px;
 	margin-bottom: 80px !important;
 }
 
-.gitlink:before{
+.gitlink:before {
 	content: url("../img/git-logo.svg");
 	display: inline-block;
-    vertical-align: middle;
-    font-style: normal;
+	vertical-align: middle;
+	font-style: normal;
 }
 
-.linkedin:before{
+.linkedin:before {
 	content: url("../img/linked-logo.svg");
 	display: inline-block;
-    vertical-align: middle;
-    font-style: normal;
+	vertical-align: middle;
+	font-style: normal;
 }
 
-.facebook:before{
+.facebook:before {
 	content: url("../img/facebook-logo.svg");
 	display: inline-block;
-    vertical-align: middle;
-    font-style: normal;
+	vertical-align: middle;
+	font-style: normal;
+}
+
+.telegram:before {
+	content: url("../img/telegram_logo.svg");
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	font-style: normal;
 }

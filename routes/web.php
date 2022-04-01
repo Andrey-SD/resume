@@ -11,30 +11,30 @@
 |
 */
 
-Route::get('/','Publish\HomeController@home');
+Route::redirect('/', '/home');
 
-Route::get('/home','Publish\HomeController@home');
+Route::get('/home', 'Publish\HomeController@home');
 
-Route::get('/projects','Publish\ProjectsController@projects');
+Route::get('/projects', 'Publish\ProjectsController@projects');
 
-Route::get('/resume','Publish\ResumeController@resume');
+Route::get('/resume', 'Publish\ResumeController@resume');
 
-Route::get('/contacts','Publish\ContactsController@contacts');
+Route::get('/contacts', 'Publish\ContactsController@contacts');
 
-Route::post('/send-mail','Mail\Incoming@send');
+Route::post('/send-mail', 'Mail\Incoming@send');
 
-Route::post('/send-mail-resume','Mail\IncomingResume@send');
+Route::post('/send-mail-resume', 'Mail\IncomingResume@send');
 
-Route::get('/dash-auth','Auth\LoginController@showLoginForm');
+Route::get('/dash-auth', 'Auth\LoginController@showLoginForm');
 
-Route::post('/dash-auth','Auth\LoginController@login')->name('login');
+Route::post('/dash-auth', 'Auth\LoginController@login')->name('login');
 
-Route::get('/logout','Auth\LoginController@logout');
+Route::get('/logout', 'Auth\LoginController@logout');
 
-Route::get('/my-dash','Admin\DashController@dash')->middleware('auth');
+Route::get('/my-dash', 'Admin\DashController@dash')->middleware('auth');
 
-Route::post('/my-dash','Admin\DashController@code_edit')->name('code_edit');
+Route::post('/my-dash', 'Admin\DashController@code_edit')->name('code_edit');
 
-Route::get('/print','Publish\PrintController@print');
+Route::get('/print', 'Publish\PrintController@print');
 
 Route::get('/download','Publish\DownloadsController@download');
