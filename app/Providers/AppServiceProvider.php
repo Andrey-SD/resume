@@ -18,7 +18,7 @@ class AppServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-		URL::forceScheme('http');
+		URL::forceScheme('https');
 		$info = simplexml_load_file('data.xml');
 		view()->share(['info' => $info]);
 	}
