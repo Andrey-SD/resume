@@ -10,13 +10,23 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<link href="{{ URL::asset('img/icon.png') }}" rel="icon">
 	<link href='{{ URL::asset('fonts/droid.ttf') }}' type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="{{ URL::asset('bootstrap-3.3.4-dist/css/bootstrap.min.css') }}">
+	<script src="{{ URL::asset('jquery-3.2.1/jquery.min.js') }}"></script>
+	<script src="{{ URL::asset('bootstrap-3.3.4-dist/js/bootstrap.min.js') }}"></script>
+
 	<link href='{{ URL::asset('css/main.css') }}' rel="stylesheet" type="text/css">
 	<link href='{{ URL::asset('css/print.css') }}' rel="stylesheet" type="text/css">
 </head>
+
+<!-- если стили не загружаются проверить протокол http/https
+перейти в app/Providers\AppServiceProvider.php
+public function boot()
+	{
+		URL::forceScheme('https');
+	}
+перключить протокол -->
+
 
 <body>
 	<div class="nav">
